@@ -45,15 +45,9 @@ class FacebookLoginViewController: UIViewController {
                         self.showMessage("Unable to log in with Facebook", title: "Error")
                         return
                     }
-                    self.presentFeedController()
+                    self.dismiss(animated: true, completion: nil)
                 })
             }
-        }
-    }
-    
-    func presentFeedController() {
-        dismiss(animated: true) {
-            self.homeViewController?.presentFeedViewController()
         }
     }
     

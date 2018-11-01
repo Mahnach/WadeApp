@@ -18,18 +18,30 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         
         navigationController?.isNavigationBarHidden = true
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         if let user = Auth.auth().currentUser {
-            hamburgerButton.isHidden = false
-            plusButton.isHidden = true
             DataManager.shared.currentUser = user
+        }
+    }
+    
+    @IBAction func hamburgerButtonDidTap() {
+        if DataManager.shared.currentUser == nil {
+            showMessage("You need to make an account", title: "Error")
+            return
+        }
+        performSegue(withIdentifier: "presentMenu", sender: self)
+    }
+    
+    @IBAction func plusButtonDidTap() {
+        if DataManager.shared.currentUser == nil {
+            performSegue(withIdentifier: "facebookLogin", sender: self)
         } else {
-            plusButton.isHidden = false
-            hamburgerButton.isHidden = true
+            performSegue(withIdentifier: "presentFeed", sender: self)
         }
     }
     
@@ -38,11 +50,6 @@ class HomeViewController: UIViewController {
             let viewController = (segue.destination as! UINavigationController).topViewController as! FacebookLoginViewController
             viewController.homeViewController = self
         }
-    }
-    
-    func presentFeedViewController() {
-        let feedViewController = storyboard?.instantiateViewController(withIdentifier: "FeedViewController") as! FeedViewController
-        navigationController?.pushViewController(feedViewController, animated: true)
     }
     
 }
