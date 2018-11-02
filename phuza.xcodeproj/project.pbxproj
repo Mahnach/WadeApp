@@ -19,6 +19,9 @@
 		38E681FB2189DEB200913ED5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E681FA2189DEB200913ED5 /* DataManager.swift */; };
 		38E682002189E01200913ED5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E681FF2189E01200913ED5 /* FeedViewController.swift */; };
 		38E68204218B2CDD00913ED5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E68203218B2CDD00913ED5 /* MenuViewController.swift */; };
+		38E69890218C9357001FACC3 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E6988F218C9357001FACC3 /* Offer.swift */; };
+		38E69893218C938A001FACC3 /* FeedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E69892218C938A001FACC3 /* FeedTableCell.swift */; };
+		38E69896218C94CE001FACC3 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E69895218C94CE001FACC3 /* OfferViewController.swift */; };
 		3A2611C54B527B6D1BCAD3AB /* Pods_phuza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693BD130290BDE6B054A7D4B /* Pods_phuza.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		38E681FA2189DEB200913ED5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		38E681FF2189E01200913ED5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		38E68203218B2CDD00913ED5 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		38E6988F218C9357001FACC3 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		38E69892218C938A001FACC3 /* FeedTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableCell.swift; sourceTree = "<group>"; };
+		38E69895218C94CE001FACC3 /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		693BD130290BDE6B054A7D4B /* Pods_phuza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phuza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3F6CEEF3DEEB1E246679BA /* Pods-phuza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phuza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-phuza/Pods-phuza.debug.xcconfig"; sourceTree = "<group>"; };
 		FCD7755EFF866A95C16B019E /* Pods-phuza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phuza.release.xcconfig"; path = "Pods/Target Support Files/Pods-phuza/Pods-phuza.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +81,8 @@
 		38E681DB2189B6FA00913ED5 /* phuza */ = {
 			isa = PBXGroup;
 			children = (
+				38E69894218C939C001FACC3 /* Cell */,
+				38E69891218C935E001FACC3 /* Models */,
 				38E681FC2189DECC00913ED5 /* Controllers */,
 				38E681FD2189DED500913ED5 /* Extensions */,
 				38E681FE2189DEDD00913ED5 /* Helpers */,
@@ -96,6 +104,7 @@
 				38E681F22189C1AA00913ED5 /* FacebookLoginViewController.swift */,
 				38E681FF2189E01200913ED5 /* FeedViewController.swift */,
 				38E68203218B2CDD00913ED5 /* MenuViewController.swift */,
+				38E69895218C94CE001FACC3 /* OfferViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,6 +123,22 @@
 				38E681FA2189DEB200913ED5 /* DataManager.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		38E69891218C935E001FACC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38E6988F218C9357001FACC3 /* Offer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38E69894218C939C001FACC3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				38E69892218C938A001FACC3 /* FeedTableCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		95D85454143224C9B7E4B7D0 /* Pods */ = {
@@ -268,12 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E69896218C94CE001FACC3 /* OfferViewController.swift in Sources */,
 				38E681DF2189B6FA00913ED5 /* SplashViewController.swift in Sources */,
 				38E681FB2189DEB200913ED5 /* DataManager.swift in Sources */,
 				38E681DD2189B6FA00913ED5 /* AppDelegate.swift in Sources */,
 				38E681F92189DA2B00913ED5 /* UIViewController+AlertMessages.swift in Sources */,
 				38E681F32189C1AA00913ED5 /* FacebookLoginViewController.swift in Sources */,
 				38E681EF2189B8C900913ED5 /* HomeViewController.swift in Sources */,
+				38E69893218C938A001FACC3 /* FeedTableCell.swift in Sources */,
+				38E69890218C9357001FACC3 /* Offer.swift in Sources */,
 				38E682002189E01200913ED5 /* FeedViewController.swift in Sources */,
 				38E68204218B2CDD00913ED5 /* MenuViewController.swift in Sources */,
 			);

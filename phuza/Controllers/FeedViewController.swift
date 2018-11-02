@@ -11,30 +11,11 @@ import Kingfisher
 import FirebaseDatabase
 import Firebase
 
-class Offer {
-    
-    let id: String
-    let headline: String
-    let image: String
-    let link: String
-    let title: String
-    let text: String
-    
-    init(id: String, data: [String : Any]) {
-        self.id = id
-        self.headline = data["headline"] as? String ?? ""
-        self.image = data["image"] as? String ?? ""
-        self.link = data["link"] as? String ?? ""
-        self.title = data["offer"] as? String ?? ""
-        self.text = data["text"] as? String ?? ""
-        
-    }
-    
-}
-
 class FeedViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     var ref: DatabaseReference!
     var offers: [Offer] = []
     
@@ -42,6 +23,11 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideTableViewSeprator(true)
+        activityIndicator.startAnimating()
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+        }
         ref = Database.database().reference()
         ref.child("offers").observe(.value) { (snapshot) in
             self.offers = []
@@ -49,8 +35,20 @@ class FeedViewController: UIViewController {
                 let snap = item as! DataSnapshot
                 self.offers.append(Offer(id: snap.key, data: snap.value as? [String : Any] ?? [:]))
             }
+            self.hideTableViewSeprator(false)
+            self.activityIndicator.stopAnimating()
             self.tableView.reloadData()
         }
+    }
+    
+    func hideTableViewSeprator(_ isHidden: Bool) {
+        tableView.separatorStyle = isHidden ? .none : .singleLine
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndexPath = tableView.indexPathForSelectedRow, segue.identifier == "offerDetail" else { return }
+        let offerViewController = segue.destination as! OfferViewController
+        offerViewController.offer = offers[selectedIndexPath.row]
     }
     
 }
@@ -67,8 +65,4 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-}
-
-class FeedTableCell: UITableViewCell {
-    @IBOutlet weak var offerImageView: UIImageView!
 }
