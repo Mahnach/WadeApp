@@ -22,6 +22,10 @@ class FacebookLoginViewController: UIViewController {
         setupUI()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func setupUI() {
         cancelButton.layer.borderWidth = 1.0
         cancelButton.layer.borderColor = UIColor(red: 229.0/255.0, green: 229.0/255.0, blue: 229.0/255.0, alpha: 1.0).cgColor

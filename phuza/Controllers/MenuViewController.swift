@@ -7,15 +7,41 @@
 //
 
 import UIKit
+import Firebase
+
+enum MenuType {
+    case favourites, settings
+}
+
+struct MenuItem {
+    let title: String
+    let type: MenuType
+}
 
 class MenuViewController: UIViewController {
     
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var userImageView: UIImageView!
     
+    var items: [MenuItem] = [
+        MenuItem(title: "Favourites", type: .favourites),
+        MenuItem(title: "Settings", type: .settings)
+    ]
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
         if let user = DataManager.shared.currentUser {
             usernameLabel.text = user.displayName
             if let photoUrl = user.photoURL {
@@ -28,4 +54,43 @@ class MenuViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func logoutAction() {
+        do {
+            try Auth.auth().signOut()
+            DataManager.shared.currentUser = nil
+            UIApplication.shared.keyWindow?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        } catch {
+            print(error)
+        }
+    }
+    
+}
+
+extension MenuViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuItemCell", for: indexPath) as! MenuItemCell
+        cell.itemLabel.text = items[indexPath.row].title
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch items[indexPath.row].type {
+        case .favourites:
+            performSegue(withIdentifier: "showFavourites", sender: self)
+            break
+        case .settings:
+            performSegue(withIdentifier: "presentSettings", sender: self)
+            break
+        }
+    }
+    
+}
+
+class MenuItemCell: UITableViewCell {
+    @IBOutlet weak var itemLabel: UILabel!
 }

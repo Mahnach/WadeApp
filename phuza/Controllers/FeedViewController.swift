@@ -41,6 +41,10 @@ class FeedViewController: UIViewController {
         }
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func hideTableViewSeprator(_ isHidden: Bool) {
         tableView.separatorStyle = isHidden ? .none : .singleLine
     }

@@ -29,6 +29,10 @@ class HomeViewController: UIViewController {
         }
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     @IBAction func hamburgerButtonDidTap() {
         if DataManager.shared.currentUser == nil {
             showMessage("You need to make an account", title: "Error")
