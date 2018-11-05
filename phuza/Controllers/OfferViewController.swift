@@ -11,14 +11,20 @@ import SafariServices
 
 class OfferViewController: UITableViewController {
     
+    enum LikeButtonState {
+        case liked, unliked
+    }
+    
     @IBOutlet weak var offerImageView: UIImageView!
     @IBOutlet weak var offerLabel: UILabel!
     @IBOutlet weak var headlineLabel: UILabel!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var linkButton: UIButton!
     @IBOutlet weak var revealButton: UIButton!
+    @IBOutlet weak var likeButton: UIButton!
     
     var offer: Offer!
+    var likeButtonState: LikeButtonState = .unliked
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +43,11 @@ class OfferViewController: UITableViewController {
         textLabel.text = offer.text
         linkButton.setTitle(offer.link, for: .normal)
         revealButton.backgroundColor = offer.buttonColor
+        let filteredFavoritesIds = StorageManager.getFavoritesIds().filter { return offer.id == $0 }
+        if filteredFavoritesIds.count > 0  {
+            likeButton.tintColor = .red
+            likeButtonState = .liked
+        }
         setNeedsStatusBarAppearanceUpdate()
     }
     
@@ -56,4 +67,28 @@ class OfferViewController: UITableViewController {
         }
     }
     
+    @IBAction func revealCodeButtonTouched(_ sender: Any) {
+        revealButton.setTitle("PHUZAXYZ", for: .normal)
+    }
+    
+    @IBAction func likeButtonTouched(_ sender: Any) {
+        switch likeButtonState {
+        case .liked:
+            likeButton.tintColor = .black
+            likeButtonState = .unliked
+            StorageManager.removeFromFavorite(id: offer.id)
+        case .unliked:
+            likeButton.tintColor = .red
+            likeButtonState = .liked
+            StorageManager.addToFavourite(id: offer.id)
+        }
+        
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segues.offerToSpend.rawValue {
+            (segue.destination as? SpendViewController)?.offer = offer
+        }
+    }
 }

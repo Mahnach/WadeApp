@@ -10,4 +10,5 @@ import UIKit
 
 class FeedTableCell: UITableViewCell {
     @IBOutlet weak var offerImageView: UIImageView!
+    var offer: Offer = Offer(id: "", data: [:])
 }

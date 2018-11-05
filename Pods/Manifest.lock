@@ -76,6 +76,7 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - Reveal-SDK (19)
 
 DEPENDENCIES:
   - FBSDKLoginKit
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Kingfisher
+  - Reveal-SDK
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -102,6 +104,7 @@ SPEC REPOS:
     - Kingfisher
     - leveldb-library
     - nanopb
+    - Reveal-SDK
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
@@ -120,7 +123,8 @@ SPEC CHECKSUMS:
   Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Reveal-SDK: 9f0d2c6c12eb7507921e5454ac165b7aa21140a4
 
-PODFILE CHECKSUM: 414a2f351264af20aaab992d869eb9fd1b1b1062
+PODFILE CHECKSUM: ea48f33d0235df9ef142dd986e316d6a287b21ed
 
 COCOAPODS: 1.5.3
