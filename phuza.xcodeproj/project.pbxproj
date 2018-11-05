@@ -23,6 +23,17 @@
 		38E69896218C94CE001FACC3 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E69895218C94CE001FACC3 /* OfferViewController.swift */; };
 		38E69898218CB532001FACC3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E69897218CB532001FACC3 /* SettingsViewController.swift */; };
 		3A2611C54B527B6D1BCAD3AB /* Pods_phuza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693BD130290BDE6B054A7D4B /* Pods_phuza.framework */; };
+		694DE238218DAE9900F7FCC6 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE237218DAE9900F7FCC6 /* UIView+Nib.swift */; };
+		694DE23A218ECD3500F7FCC6 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE239218ECD3500F7FCC6 /* TermsViewController.swift */; };
+		694DE23C218ECD4A00F7FCC6 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE23B218ECD4A00F7FCC6 /* PrivacyViewController.swift */; };
+		694DE23F218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE23D218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.swift */; };
+		694DE240218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694DE23E218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.xib */; };
+		694DE242218ED49300F7FCC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE241218ED49300F7FCC6 /* Constants.swift */; };
+		694DE244218ED9B700F7FCC6 /* SpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE243218ED9B700F7FCC6 /* SpendViewController.swift */; };
+		694DE246218EF45D00F7FCC6 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE245218EF45D00F7FCC6 /* FavoritesViewController.swift */; };
+		694DE249218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE247218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift */; };
+		694DE24A218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694DE248218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib */; };
+		69F02A9D218F083600B65AA5 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F02A9C218F083600B65AA5 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +55,17 @@
 		38E69895218C94CE001FACC3 /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		38E69897218CB532001FACC3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		693BD130290BDE6B054A7D4B /* Pods_phuza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phuza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		694DE237218DAE9900F7FCC6 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		694DE239218ECD3500F7FCC6 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		694DE23B218ECD4A00F7FCC6 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		694DE23D218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMenuTableViewCell.swift; sourceTree = "<group>"; };
+		694DE23E218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsMenuTableViewCell.xib; sourceTree = "<group>"; };
+		694DE241218ED49300F7FCC6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		694DE243218ED9B700F7FCC6 /* SpendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewController.swift; sourceTree = "<group>"; };
+		694DE245218EF45D00F7FCC6 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		694DE247218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesMoreTableViewCell.swift; sourceTree = "<group>"; };
+		694DE248218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesMoreTableViewCell.xib; sourceTree = "<group>"; };
+		69F02A9C218F083600B65AA5 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CA3F6CEEF3DEEB1E246679BA /* Pods-phuza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phuza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-phuza/Pods-phuza.debug.xcconfig"; sourceTree = "<group>"; };
 		FCD7755EFF866A95C16B019E /* Pods-phuza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phuza.release.xcconfig"; path = "Pods/Target Support Files/Pods-phuza/Pods-phuza.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +127,10 @@
 				38E68203218B2CDD00913ED5 /* MenuViewController.swift */,
 				38E69897218CB532001FACC3 /* SettingsViewController.swift */,
 				38E69895218C94CE001FACC3 /* OfferViewController.swift */,
+				694DE239218ECD3500F7FCC6 /* TermsViewController.swift */,
+				694DE23B218ECD4A00F7FCC6 /* PrivacyViewController.swift */,
+				694DE243218ED9B700F7FCC6 /* SpendViewController.swift */,
+				694DE245218EF45D00F7FCC6 /* FavoritesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				38E681F82189DA2B00913ED5 /* UIViewController+AlertMessages.swift */,
+				694DE237218DAE9900F7FCC6 /* UIView+Nib.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -121,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				38E681FA2189DEB200913ED5 /* DataManager.swift */,
+				694DE241218ED49300F7FCC6 /* Constants.swift */,
+				69F02A9C218F083600B65AA5 /* StorageManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -137,6 +166,10 @@
 			isa = PBXGroup;
 			children = (
 				38E69892218C938A001FACC3 /* FeedTableCell.swift */,
+				694DE23D218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.swift */,
+				694DE23E218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.xib */,
+				694DE247218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift */,
+				694DE248218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -218,10 +251,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694DE24A218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib in Resources */,
 				38E681E72189B6FB00913ED5 /* LaunchScreen.storyboard in Resources */,
 				38E681E42189B6FB00913ED5 /* Assets.xcassets in Resources */,
 				38E681E22189B6FA00913ED5 /* Main.storyboard in Resources */,
 				38E681F12189B9E800913ED5 /* GoogleService-Info.plist in Resources */,
+				694DE240218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,15 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-phuza-checkManifestLockResult.txt",
 			);
@@ -255,8 +286,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-phuza/Pods-phuza-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
@@ -265,12 +294,11 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-19/iOS/RevealServer.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
@@ -278,6 +306,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -293,14 +322,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694DE249218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift in Sources */,
 				38E69896218C94CE001FACC3 /* OfferViewController.swift in Sources */,
+				694DE244218ED9B700F7FCC6 /* SpendViewController.swift in Sources */,
+				694DE23F218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.swift in Sources */,
 				38E681FB2189DEB200913ED5 /* DataManager.swift in Sources */,
 				38E681DD2189B6FA00913ED5 /* AppDelegate.swift in Sources */,
+				694DE23C218ECD4A00F7FCC6 /* PrivacyViewController.swift in Sources */,
+				69F02A9D218F083600B65AA5 /* StorageManager.swift in Sources */,
+				694DE23A218ECD3500F7FCC6 /* TermsViewController.swift in Sources */,
 				38E681F92189DA2B00913ED5 /* UIViewController+AlertMessages.swift in Sources */,
+				694DE242218ED49300F7FCC6 /* Constants.swift in Sources */,
 				38E681F32189C1AA00913ED5 /* FacebookLoginViewController.swift in Sources */,
+				694DE246218EF45D00F7FCC6 /* FavoritesViewController.swift in Sources */,
 				38E681EF2189B8C900913ED5 /* HomeViewController.swift in Sources */,
 				38E69893218C938A001FACC3 /* FeedTableCell.swift in Sources */,
 				38E69890218C9357001FACC3 /* Offer.swift in Sources */,
+				694DE238218DAE9900F7FCC6 /* UIView+Nib.swift in Sources */,
 				38E682002189E01200913ED5 /* FeedViewController.swift in Sources */,
 				38E68204218B2CDD00913ED5 /* MenuViewController.swift in Sources */,
 				38E69898218CB532001FACC3 /* SettingsViewController.swift in Sources */,
@@ -451,13 +489,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = phuza/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = us.phuza.app;
+				PRODUCT_BUNDLE_IDENTIFIER = us.phuza.app1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,13 +509,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = phuza/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = us.phuza.app;
+				PRODUCT_BUNDLE_IDENTIFIER = us.phuza.app1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

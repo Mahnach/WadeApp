@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="KGk-i7-Jjw" customClass="FavoritesMoreTableViewCell" customModule="phuza" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5s0-LR-4gA">
+                        <rect key="frame" x="89.5" y="122" width="141" height="35"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqe-4m-cT6">
+                        <rect key="frame" x="149" y="206" width="22" height="22"/>
+                        <state key="normal" image="Add More Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5s0-LR-4gA" firstAttribute="baseline" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6ND-Qz-bNx"/>
+                    <constraint firstItem="5s0-LR-4gA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="GUf-Nb-c5X"/>
+                    <constraint firstItem="Rqe-4m-cT6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="h90-AT-uv8"/>
+                    <constraint firstItem="Rqe-4m-cT6" firstAttribute="top" secondItem="5s0-LR-4gA" secondAttribute="bottom" constant="35" id="mG7-Hk-pe5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="220.80000000000001" y="84.557721139430285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Add More Button" width="22" height="22"/>
+    </resources>
+</document>
