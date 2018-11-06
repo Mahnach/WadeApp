@@ -74,7 +74,7 @@ extension SettingsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsMenuTableViewCell") as! SettingsMenuTableViewCell
         cell.cellTitle.text = items[indexPath.row].title
-        cell.isHighlighted = false
+        cell.selectionStyle = .none
         
         return cell
     }

@@ -106,12 +106,14 @@ extension FavoritesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == offers.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FavoritesMoreTableViewCell", for: indexPath) as! FavoritesMoreTableViewCell
+            cell.selectionStyle = .none
             return cell
 
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableCell", for: indexPath) as! FeedTableCell
             cell.offerImageView.kf.setImage(with: URL(string: offers[indexPath.row].image))
             cell.offer = offers[indexPath.row]
+            cell.selectionStyle = .none
             
             return cell
         }
