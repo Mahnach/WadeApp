@@ -9,6 +9,9 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
+import FirebaseMessaging
+import UserNotifications
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
         FirebaseApp.configure()
+
+        UNUserNotificationCenter.current().delegate = self
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(
+            options: authOptions,
+            completionHandler: {_, _ in })
+        Messaging.messaging().delegate = self
+        application.registerForRemoteNotifications()
+
         return true
     }
     
@@ -29,3 +41,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 }
 
+extension AppDelegate: MessagingDelegate {
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        
+    }
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func applicationReceivedRemoteMessage(_ remoteMessage: MessagingRemoteMessage) {
+    }
+}

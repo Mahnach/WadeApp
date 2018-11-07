@@ -20,6 +20,9 @@ PODS:
   - Firebase/Database (5.11.0):
     - Firebase/CoreOnly
     - FirebaseDatabase (= 5.0.3)
+  - Firebase/Messaging (5.11.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.2.1)
   - FirebaseAnalytics (5.3.0):
     - FirebaseCore (~> 5.1)
     - FirebaseInstanceID (~> 3.3)
@@ -29,6 +32,7 @@ PODS:
     - GoogleUtilities/Network (~> 5.2)
     - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
+  - FirebaseAnalyticsInterop (1.1.0)
   - FirebaseAuth (5.0.4):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.0)
@@ -44,6 +48,13 @@ PODS:
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.3)
     - GoogleUtilities/UserDefaults (~> 5.3)
+  - FirebaseMessaging (3.2.1):
+    - FirebaseAnalyticsInterop (~> 1.1)
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/Reachability (~> 5.2)
+    - Protobuf (~> 3.1)
   - GoogleAppMeasurement (5.3.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
@@ -76,6 +87,7 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - Protobuf (3.6.1)
   - Reveal-SDK (19)
 
 DEPENDENCIES:
@@ -83,6 +95,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - Firebase/Messaging
   - Kingfisher
   - Reveal-SDK
 
@@ -93,17 +106,20 @@ SPEC REPOS:
     - FBSDKLoginKit
     - Firebase
     - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
     - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
     - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseMessaging
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
     - Kingfisher
     - leveldb-library
     - nanopb
+    - Protobuf
     - Reveal-SDK
 
 SPEC CHECKSUMS:
@@ -112,19 +128,22 @@ SPEC CHECKSUMS:
   FBSDKLoginKit: 634fa27e72e33620eb6389253337342c03d4a407
   Firebase: b48f9e653da971ecce5b8c749684bc8bb2d26bd3
   FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
+  FirebaseAnalyticsInterop: e5f21be9af6548372e2f0815834ff909bff395a2
   FirebaseAuth: 504b198ceb3472dca5c65bb95544ea44cfc9439e
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: d16552f06821489ce1affe2e5e3e5593402ddfe3
   FirebaseDatabase: e2bcbc106adc4b11a2da3ec2eb63c0c4a44f2f54
   FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  FirebaseMessaging: 0f14a264b0d7f867e8eff5d3556bc5d0d4e57888
   GoogleAppMeasurement: 5029d78f2b438bd30ffb44e6c558b57c21622727
   GoogleUtilities: abb092d2c12e817fa3e0e7b274987dd72fb86ec3
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   Reveal-SDK: 9f0d2c6c12eb7507921e5454ac165b7aa21140a4
 
-PODFILE CHECKSUM: ea48f33d0235df9ef142dd986e316d6a287b21ed
+PODFILE CHECKSUM: 3413c94f3bef963816ba8debb60363ea4194cad7
 
 COCOAPODS: 1.5.3

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FBSDKLoginKit
 
 class SpendViewController: UIViewController {
     
@@ -15,6 +17,8 @@ class SpendViewController: UIViewController {
         case submitted = "Submitted"
     }
     
+    var ref: DatabaseReference!
+
     // MARK: - Outlets
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
@@ -30,6 +34,7 @@ class SpendViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
         titleLabel.text = offer.title
         subtitleLabel.text = "How much are you going to spend at \(offer.title) in the next 30 days?"
         
@@ -44,12 +49,28 @@ class SpendViewController: UIViewController {
     
     @IBAction func submitButtonTouched(_ sender: Any) {
         if submitButtonState == .submit {
-            submitButton.titleLabel?.text = SubmitButtonState.submitted.rawValue
+            submitButton.setTitle(SubmitButtonState.submitted.rawValue, for: .normal)
             submitButtonState = .submitted
+            writeSpendData()
+            submitButton.isEnabled = false
         }
     }
     
     @IBAction func closeButtonTouched(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    func writeSpendData() {
+        guard let user = DataManager.shared.currentUser else { return }
+        
+        let spendInfoRef = ref.child("spend_info")
+        let key = spendInfoRef.childByAutoId().key
+        let spendInfo: [String: Any] = [
+            "id": key!,
+            "display_name": String(user.displayName ?? ""),
+            "brand_name": offer.title,
+            "amount": Int(amountTextField.text ?? "0") ?? 0]
+       
+        spendInfoRef.child(key!).setValue(spendInfo)
     }
 }
