@@ -58,6 +58,8 @@ class MenuViewController: UIViewController {
         do {
             try Auth.auth().signOut()
             DataManager.shared.currentUser = nil
+            StorageManager.removeFavourites()
+
             UIApplication.shared.keyWindow?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
         } catch {
             print(error)

@@ -12,7 +12,6 @@
 		38E681E42189B6FB00913ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E681E32189B6FB00913ED5 /* Assets.xcassets */; };
 		38E681E72189B6FB00913ED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E681E52189B6FB00913ED5 /* LaunchScreen.storyboard */; };
 		38E681EF2189B8C900913ED5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E681EE2189B8C900913ED5 /* HomeViewController.swift */; };
-		38E681F12189B9E800913ED5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38E681F02189B9E800913ED5 /* GoogleService-Info.plist */; };
 		38E681F32189C1AA00913ED5 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E681F22189C1AA00913ED5 /* FacebookLoginViewController.swift */; };
 		38E681F92189DA2B00913ED5 /* UIViewController+AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E681F82189DA2B00913ED5 /* UIViewController+AlertMessages.swift */; };
 		38E681FB2189DEB200913ED5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E681FA2189DEB200913ED5 /* DataManager.swift */; };
@@ -23,6 +22,7 @@
 		38E69896218C94CE001FACC3 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E69895218C94CE001FACC3 /* OfferViewController.swift */; };
 		38E69898218CB532001FACC3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E69897218CB532001FACC3 /* SettingsViewController.swift */; };
 		3A2611C54B527B6D1BCAD3AB /* Pods_phuza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693BD130290BDE6B054A7D4B /* Pods_phuza.framework */; };
+		6904FEC4219369250057C224 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6904FEC3219369250057C224 /* GoogleService-Info.plist */; };
 		694DE238218DAE9900F7FCC6 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE237218DAE9900F7FCC6 /* UIView+Nib.swift */; };
 		694DE23A218ECD3500F7FCC6 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE239218ECD3500F7FCC6 /* TermsViewController.swift */; };
 		694DE23C218ECD4A00F7FCC6 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE23B218ECD4A00F7FCC6 /* PrivacyViewController.swift */; };
@@ -44,7 +44,6 @@
 		38E681E62189B6FB00913ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38E681E82189B6FB00913ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38E681EE2189B8C900913ED5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		38E681F02189B9E800913ED5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38E681F22189C1AA00913ED5 /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
 		38E681F82189DA2B00913ED5 /* UIViewController+AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertMessages.swift"; sourceTree = "<group>"; };
 		38E681FA2189DEB200913ED5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -54,6 +53,8 @@
 		38E69892218C938A001FACC3 /* FeedTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableCell.swift; sourceTree = "<group>"; };
 		38E69895218C94CE001FACC3 /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		38E69897218CB532001FACC3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6904FEC3219369250057C224 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6904FEC5219372DA0057C224 /* phuza.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = phuza.entitlements; sourceTree = "<group>"; };
 		693BD130290BDE6B054A7D4B /* Pods_phuza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phuza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		694DE237218DAE9900F7FCC6 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		694DE239218ECD3500F7FCC6 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
@@ -103,16 +104,17 @@
 		38E681DB2189B6FA00913ED5 /* phuza */ = {
 			isa = PBXGroup;
 			children = (
+				6904FEC5219372DA0057C224 /* phuza.entitlements */,
 				38E69894218C939C001FACC3 /* Cell */,
 				38E69891218C935E001FACC3 /* Models */,
 				38E681FC2189DECC00913ED5 /* Controllers */,
 				38E681FD2189DED500913ED5 /* Extensions */,
 				38E681FE2189DEDD00913ED5 /* Helpers */,
 				38E681DC2189B6FA00913ED5 /* AppDelegate.swift */,
+				6904FEC3219369250057C224 /* GoogleService-Info.plist */,
 				38E681E02189B6FA00913ED5 /* Main.storyboard */,
 				38E681E32189B6FB00913ED5 /* Assets.xcassets */,
 				38E681E52189B6FB00913ED5 /* LaunchScreen.storyboard */,
-				38E681F02189B9E800913ED5 /* GoogleService-Info.plist */,
 				38E681E82189B6FB00913ED5 /* Info.plist */,
 			);
 			path = phuza;
@@ -225,6 +227,11 @@
 				TargetAttributes = {
 					38E681D82189B6FA00913ED5 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -255,8 +262,8 @@
 				38E681E72189B6FB00913ED5 /* LaunchScreen.storyboard in Resources */,
 				38E681E42189B6FB00913ED5 /* Assets.xcassets in Resources */,
 				38E681E22189B6FA00913ED5 /* Main.storyboard in Resources */,
-				38E681F12189B9E800913ED5 /* GoogleService-Info.plist in Resources */,
 				694DE240218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.xib in Resources */,
+				6904FEC4219369250057C224 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -475,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -490,15 +497,16 @@
 			baseConfigurationReference = CA3F6CEEF3DEEB1E246679BA /* Pods-phuza.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = phuza/phuza.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8SNBPDEWV3;
+				DEVELOPMENT_TEAM = S5J4XGLBHR;
 				INFOPLIST_FILE = phuza/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = us.phuzza.app;
+				PRODUCT_BUNDLE_IDENTIFIER = us.phuza.ap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,15 +518,16 @@
 			baseConfigurationReference = FCD7755EFF866A95C16B019E /* Pods-phuza.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = phuza/phuza.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8SNBPDEWV3;
+				DEVELOPMENT_TEAM = S5J4XGLBHR;
 				INFOPLIST_FILE = phuza/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = us.phuzza.app;
+				PRODUCT_BUNDLE_IDENTIFIER = us.phuza.ap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

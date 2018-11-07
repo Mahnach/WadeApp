@@ -39,14 +39,14 @@ class SettingsViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    func getPrivacyController() -> UIViewController {
+    func getTermsViewController() -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "TermsViewController") as! TermsViewController
         
         return viewController
     }
     
-    func getTermsViewController() -> UIViewController {
+    func getPrivacyController() -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "PrivacyViewController") as! PrivacyViewController
         
