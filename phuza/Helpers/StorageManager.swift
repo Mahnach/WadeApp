@@ -29,4 +29,8 @@ class StorageManager {
         ids.append(id)
         UserDefaults.standard.setValue(ids, forKey: Keys.favourites.rawValue)
     }
+    
+    static func removeFavourites() {
+        UserDefaults.standard.removeObject(forKey: Keys.favourites.rawValue)
+    }
 }

@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>744318202085-q2t0s4ndkq240oua6g3q829mc86u5gt2.apps.googleusercontent.com</string>
+	<string>744318202085-bv5svok3hqtm7uuhlesgvemona6cep5e.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.744318202085-q2t0s4ndkq240oua6g3q829mc86u5gt2</string>
+	<string>com.googleusercontent.apps.744318202085-bv5svok3hqtm7uuhlesgvemona6cep5e</string>
 	<key>API_KEY</key>
 	<string>AIzaSyD_T-Dr4jeNKjmjLeW-U-VWln1h--3y7sU</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>us.phuza.app</string>
+	<string>us.phuza.ap</string>
 	<key>PROJECT_ID</key>
 	<string>mvpapp-afd92</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:744318202085:ios:1e416f1ac1376b7a</string>
+	<string>1:744318202085:ios:6e893d12d1f1f0f8</string>
 	<key>DATABASE_URL</key>
 	<string>https://mvpapp-afd92.firebaseio.com</string>
 </dict>

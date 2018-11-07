@@ -39,6 +39,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
     }
     
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        if DataManager.shared.currentUser == nil {
+            UIApplication.shared.windows.first?.rootViewController?.showMessage("You need to make an account", title: "Error")
+            return
+        }
+        if let navigationController = UIApplication.shared.windows.first?.rootViewController as? UINavigationController {
+            if !(navigationController.topViewController is FeedViewController) {
+                UIApplication.shared.keyWindow?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier: "FeedViewController") as! FeedViewController
+                (UIApplication.shared.windows.first?.rootViewController as? UINavigationController)?
+                    .pushViewController(viewController, animated: true)
+            }
+        }
+    }
 }
 
 extension AppDelegate: MessagingDelegate {
@@ -49,5 +66,6 @@ extension AppDelegate: MessagingDelegate {
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     func applicationReceivedRemoteMessage(_ remoteMessage: MessagingRemoteMessage) {
+        
     }
 }
