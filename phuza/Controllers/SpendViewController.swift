@@ -34,6 +34,7 @@ class SpendViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        amountTextField.delegate = self
         ref = Database.database().reference()
         titleLabel.text = offer.title
         subtitleLabel.text = "How much are you going to spend at \(offer.title) in the next 30 days?"
@@ -60,6 +61,10 @@ class SpendViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func spendInputValueDidChanged(_ sender: UITextField) {
+
+    }
+    
     func writeSpendData() {
         guard let user = DataManager.shared.currentUser else { return }
         
@@ -72,5 +77,20 @@ class SpendViewController: UIViewController {
             "amount": Int(amountTextField.text ?? "0") ?? 0]
        
         spendInfoRef.child(key!).setValue(spendInfo)
+    }
+}
+
+extension SpendViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        submitButton.isEnabled = !(textField.text!.count == 1 && string.isEmpty)
+        submitButtonState = .submit
+        submitButton.setTitle(SubmitButtonState.submit.rawValue, for: .normal)
+        
+        let inverseSet = NSCharacterSet.decimalDigits.inverted
+        let components = string.components(separatedBy: inverseSet)
+        
+        let filtered = components.joined(separator: "")
+        return (string == filtered)
     }
 }

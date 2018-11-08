@@ -147,7 +147,7 @@
                         <sections>
                             <tableViewSection id="W9t-LP-SGI">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="300" id="Eq4-LX-fXn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="300" id="Eq4-LX-fXn">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eq4-LX-fXn" id="PpW-cP-81l">
@@ -169,7 +169,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="283" id="kTa-SW-hq4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="283" id="kTa-SW-hq4">
                                         <rect key="frame" x="0.0" y="300" width="375" height="283"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kTa-SW-hq4" id="Mig-My-BiI">
@@ -241,7 +241,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="905-k3-fst">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="100" id="905-k3-fst">
                                         <rect key="frame" x="0.0" y="583" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="905-k3-fst" id="4sH-aR-yXN">
@@ -416,7 +416,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUI-tw-lJG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUI-tw-lJG" customClass="LogoutButton" customModule="phuza" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="615" width="375" height="52"/>
                                 <color key="backgroundColor" red="0.28639698029999999" green="0.03879323229" blue="0.51462125780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -426,11 +426,6 @@
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="logoutAction" destination="7Gu-SR-Ywn" eventType="touchUpInside" id="P0F-pv-nT2"/>
                                 </connections>
@@ -729,9 +724,9 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XEz-hW-19Y">
-                                <rect key="frame" x="15" y="213" width="345" height="439"/>
+                                <rect key="frame" x="15" y="173" width="345" height="479"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Privacy Policy  
+                                <string key="text">Privacy Policy  
 ==============
 
 Effective date: October 31, 2018
@@ -941,7 +936,7 @@ If you have any questions about this Privacy Policy, please contact us:
 
   * By email: wadevg@phuza.co.uk
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -954,7 +949,7 @@ If you have any questions about this Privacy Policy, please contact us:
                             <constraint firstItem="ZNm-el-ynP" firstAttribute="top" secondItem="JOq-9I-d2R" secondAttribute="top" constant="15" id="Riz-fe-Za5"/>
                             <constraint firstItem="JOq-9I-d2R" firstAttribute="trailing" secondItem="XEz-hW-19Y" secondAttribute="trailing" constant="15" id="Vg6-72-zag"/>
                             <constraint firstItem="JOq-9I-d2R" firstAttribute="bottom" secondItem="XEz-hW-19Y" secondAttribute="bottom" constant="15" id="YFO-Ia-NlD"/>
-                            <constraint firstItem="XEz-hW-19Y" firstAttribute="top" secondItem="ZNm-el-ynP" secondAttribute="bottom" constant="143" id="i1H-YB-FBg"/>
+                            <constraint firstItem="XEz-hW-19Y" firstAttribute="top" secondItem="ZNm-el-ynP" secondAttribute="bottom" constant="103" id="i1H-YB-FBg"/>
                             <constraint firstItem="D3Q-9S-PsB" firstAttribute="top" secondItem="JOq-9I-d2R" secondAttribute="top" constant="10" id="zEl-WL-Hq0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JOq-9I-d2R"/>
@@ -991,9 +986,9 @@ If you have any questions about this Privacy Policy, please contact us:
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XHJ-6h-eap">
-                                <rect key="frame" x="15" y="213" width="345" height="439"/>
+                                <rect key="frame" x="15" y="173" width="345" height="479"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Terms and Conditions ("Terms")  
+                                <string key="text">Terms and Conditions ("Terms")  
 ==============================
 
 Last updated: October 31, 2018
@@ -1095,7 +1090,7 @@ Contact Us
 
 If you have any questions about these Terms, please contact us.
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1108,7 +1103,7 @@ If you have any questions about these Terms, please contact us.
                             <constraint firstItem="9hn-7D-wpQ" firstAttribute="centerX" secondItem="rVn-L7-R2e" secondAttribute="centerX" id="Fwg-MZ-olA"/>
                             <constraint firstItem="AMC-ZR-YDA" firstAttribute="leading" secondItem="rVn-L7-R2e" secondAttribute="leading" constant="10" id="MlV-Pg-qdl"/>
                             <constraint firstItem="rVn-L7-R2e" firstAttribute="bottom" secondItem="XHJ-6h-eap" secondAttribute="bottom" constant="15" id="NAr-HO-Q34"/>
-                            <constraint firstItem="XHJ-6h-eap" firstAttribute="top" secondItem="9hn-7D-wpQ" secondAttribute="bottom" constant="143" id="QGg-cr-KZY"/>
+                            <constraint firstItem="XHJ-6h-eap" firstAttribute="top" secondItem="9hn-7D-wpQ" secondAttribute="bottom" constant="103" id="QGg-cr-KZY"/>
                             <constraint firstItem="XHJ-6h-eap" firstAttribute="trailing" secondItem="rVn-L7-R2e" secondAttribute="trailing" constant="-15" id="fbB-Xl-0CL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rVn-L7-R2e"/>
@@ -1170,7 +1165,10 @@ If you have any questions about these Terms, please contact us.
                                         <rect key="frame" x="28" y="0.0" width="71" height="69"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="60"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" textContentType="postal-code"/>
+                                        <connections>
+                                            <action selector="spendInputValueDidChanged:" destination="zT3-v7-697" eventType="valueChanged" id="JB6-Ym-Byt"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>

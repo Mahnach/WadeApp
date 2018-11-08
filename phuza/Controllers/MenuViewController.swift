@@ -96,3 +96,11 @@ extension MenuViewController: UITableViewDataSource, UITableViewDelegate {
 class MenuItemCell: UITableViewCell {
     @IBOutlet weak var itemLabel: UILabel!
 }
+
+
+class LogoutButton: UIButton {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        roundCorners([.topLeft, .topRight], radius: 4.0)
+    }
+}

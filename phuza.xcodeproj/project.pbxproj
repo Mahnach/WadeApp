@@ -33,6 +33,7 @@
 		694DE246218EF45D00F7FCC6 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE245218EF45D00F7FCC6 /* FavoritesViewController.swift */; };
 		694DE249218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE247218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift */; };
 		694DE24A218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694DE248218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib */; };
+		69A9225F2194C0C1005C5B28 /* UIView+RoundCornres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A9225E2194C0C1005C5B28 /* UIView+RoundCornres.swift */; };
 		69F02A9D218F083600B65AA5 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F02A9C218F083600B65AA5 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		694DE245218EF45D00F7FCC6 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		694DE247218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesMoreTableViewCell.swift; sourceTree = "<group>"; };
 		694DE248218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesMoreTableViewCell.xib; sourceTree = "<group>"; };
+		69A9225E2194C0C1005C5B28 /* UIView+RoundCornres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCornres.swift"; sourceTree = "<group>"; };
 		69F02A9C218F083600B65AA5 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CA3F6CEEF3DEEB1E246679BA /* Pods-phuza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phuza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-phuza/Pods-phuza.debug.xcconfig"; sourceTree = "<group>"; };
 		FCD7755EFF866A95C16B019E /* Pods-phuza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phuza.release.xcconfig"; path = "Pods/Target Support Files/Pods-phuza/Pods-phuza.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				38E681F82189DA2B00913ED5 /* UIViewController+AlertMessages.swift */,
 				694DE237218DAE9900F7FCC6 /* UIView+Nib.swift */,
+				69A9225E2194C0C1005C5B28 /* UIView+RoundCornres.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				38E69896218C94CE001FACC3 /* OfferViewController.swift in Sources */,
 				694DE244218ED9B700F7FCC6 /* SpendViewController.swift in Sources */,
 				694DE23F218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.swift in Sources */,
+				69A9225F2194C0C1005C5B28 /* UIView+RoundCornres.swift in Sources */,
 				38E681FB2189DEB200913ED5 /* DataManager.swift in Sources */,
 				38E681DD2189B6FA00913ED5 /* AppDelegate.swift in Sources */,
 				694DE23C218ECD4A00F7FCC6 /* PrivacyViewController.swift in Sources */,

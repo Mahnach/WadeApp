@@ -28,7 +28,7 @@ class FavoritesViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "FavoritesMoreTableViewCell", bundle: nil), forCellReuseIdentifier: "FavoritesMoreTableViewCell")
-        
+        tableView.tableFooterView = UIView()
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
         }
