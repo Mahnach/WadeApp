@@ -15,13 +15,13 @@ class FacebookLoginViewController: UIViewController {
     
     @IBOutlet weak var cancelButton: UIButton!
     weak var homeViewController: HomeViewController?
+    @IBOutlet weak var userNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupUI()
     }
-    
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -29,6 +29,7 @@ class FacebookLoginViewController: UIViewController {
     func setupUI() {
         cancelButton.layer.borderWidth = 1.0
         cancelButton.layer.borderColor = UIColor(red: 229.0/255.0, green: 229.0/255.0, blue: 229.0/255.0, alpha: 1.0).cgColor
+        userNameLabel.text = Auth.auth().currentUser?.displayName
     }
     
     @IBAction func cancelAction() {
@@ -36,23 +37,8 @@ class FacebookLoginViewController: UIViewController {
     }
     
     @IBAction func loginFacebookAction() {
-        let loginManager = FBSDKLoginManager()
-        loginManager.logIn(withReadPermissions: ["public_profile", "email", "user_friends"], from: self) { (result, error) in
-            DispatchQueue.main.async {
-                guard let result = result, let resultToken = result.token, let token = resultToken.tokenString, error == nil else {
-                    self.showMessage("Unable to log in with Facebook", title: "Error")
-                    return
-                }
-                let credential = FacebookAuthProvider.credential(withAccessToken: token)
-                Auth.auth().signInAndRetrieveData(with: credential, completion: { (authResult, error) in
-                    guard let _ = authResult, error == nil else {
-                        self.showMessage("Unable to log in with Facebook", title: "Error")
-                        return
-                    }
-                    self.dismiss(animated: true, completion: nil)
-                })
-            }
-        }
+        UserDefaults.standard.set(true, forKey: "auth")
+        self.dismiss(animated: true, completion: nil)
     }
-    
+
 }
