@@ -38,6 +38,7 @@ class FacebookLoginViewController: UIViewController {
     
     @IBAction func loginFacebookAction() {
         UserDefaults.standard.set(true, forKey: "auth")
+        UserDefaults.standard.set(false, forKey: "launchAfterExit")
         self.dismiss(animated: true, completion: nil)
     }
 

@@ -79,7 +79,13 @@ class HomeViewController: UIViewController {
                 }
             }
         } else {
-            performSegue(withIdentifier: "facebookLogin", sender: self)
+            let launchAfterExit = UserDefaults.standard.bool(forKey: "launchAfterExit")
+            if launchAfterExit {
+                performSegue(withIdentifier: "facebookLogin", sender: self)
+            } else {
+                performSegue(withIdentifier: "presentFeed", sender: self)
+            }
+            
         }
     }
     
