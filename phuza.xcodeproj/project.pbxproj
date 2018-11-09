@@ -22,7 +22,6 @@
 		38E69896218C94CE001FACC3 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E69895218C94CE001FACC3 /* OfferViewController.swift */; };
 		38E69898218CB532001FACC3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E69897218CB532001FACC3 /* SettingsViewController.swift */; };
 		3A2611C54B527B6D1BCAD3AB /* Pods_phuza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693BD130290BDE6B054A7D4B /* Pods_phuza.framework */; };
-		6904FEC4219369250057C224 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6904FEC3219369250057C224 /* GoogleService-Info.plist */; };
 		694DE238218DAE9900F7FCC6 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE237218DAE9900F7FCC6 /* UIView+Nib.swift */; };
 		694DE23A218ECD3500F7FCC6 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE239218ECD3500F7FCC6 /* TermsViewController.swift */; };
 		694DE23C218ECD4A00F7FCC6 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE23B218ECD4A00F7FCC6 /* PrivacyViewController.swift */; };
@@ -33,6 +32,7 @@
 		694DE246218EF45D00F7FCC6 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE245218EF45D00F7FCC6 /* FavoritesViewController.swift */; };
 		694DE249218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DE247218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift */; };
 		694DE24A218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694DE248218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib */; };
+		6985B93221960A1600E7D900 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6985B93121960A1600E7D900 /* GoogleService-Info.plist */; };
 		69A9225F2194C0C1005C5B28 /* UIView+RoundCornres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A9225E2194C0C1005C5B28 /* UIView+RoundCornres.swift */; };
 		69F02A9D218F083600B65AA5 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F02A9C218F083600B65AA5 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
@@ -54,8 +54,6 @@
 		38E69892218C938A001FACC3 /* FeedTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableCell.swift; sourceTree = "<group>"; };
 		38E69895218C94CE001FACC3 /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		38E69897218CB532001FACC3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		6904FEC3219369250057C224 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6904FEC5219372DA0057C224 /* phuza.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = phuza.entitlements; sourceTree = "<group>"; };
 		693BD130290BDE6B054A7D4B /* Pods_phuza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phuza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		694DE237218DAE9900F7FCC6 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		694DE239218ECD3500F7FCC6 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +65,8 @@
 		694DE245218EF45D00F7FCC6 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		694DE247218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesMoreTableViewCell.swift; sourceTree = "<group>"; };
 		694DE248218EFA2100F7FCC6 /* FavoritesMoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesMoreTableViewCell.xib; sourceTree = "<group>"; };
+		6985B930219608CC00E7D900 /* phuza.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = phuza.entitlements; sourceTree = "<group>"; };
+		6985B93121960A1600E7D900 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69A9225E2194C0C1005C5B28 /* UIView+RoundCornres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCornres.swift"; sourceTree = "<group>"; };
 		69F02A9C218F083600B65AA5 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CA3F6CEEF3DEEB1E246679BA /* Pods-phuza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phuza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-phuza/Pods-phuza.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,14 +106,14 @@
 		38E681DB2189B6FA00913ED5 /* phuza */ = {
 			isa = PBXGroup;
 			children = (
-				6904FEC5219372DA0057C224 /* phuza.entitlements */,
+				6985B930219608CC00E7D900 /* phuza.entitlements */,
 				38E69894218C939C001FACC3 /* Cell */,
 				38E69891218C935E001FACC3 /* Models */,
 				38E681FC2189DECC00913ED5 /* Controllers */,
 				38E681FD2189DED500913ED5 /* Extensions */,
 				38E681FE2189DEDD00913ED5 /* Helpers */,
 				38E681DC2189B6FA00913ED5 /* AppDelegate.swift */,
-				6904FEC3219369250057C224 /* GoogleService-Info.plist */,
+				6985B93121960A1600E7D900 /* GoogleService-Info.plist */,
 				38E681E02189B6FA00913ED5 /* Main.storyboard */,
 				38E681E32189B6FB00913ED5 /* Assets.xcassets */,
 				38E681E52189B6FB00913ED5 /* LaunchScreen.storyboard */,
@@ -231,6 +231,9 @@
 					38E681D82189B6FA00913ED5 = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -266,7 +269,7 @@
 				38E681E42189B6FB00913ED5 /* Assets.xcassets in Resources */,
 				38E681E22189B6FA00913ED5 /* Main.storyboard in Resources */,
 				694DE240218ECE6B00F7FCC6 /* SettingsMenuTableViewCell.xib in Resources */,
-				6904FEC4219369250057C224 /* GoogleService-Info.plist in Resources */,
+				6985B93221960A1600E7D900 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,14 +506,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = phuza/phuza.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S5J4XGLBHR;
+				DEVELOPMENT_TEAM = S2X5MVFJ22;
 				INFOPLIST_FILE = phuza/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = us.phuza.ap;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.phuza.phuzamvp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,14 +527,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = phuza/phuza.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S5J4XGLBHR;
+				DEVELOPMENT_TEAM = S2X5MVFJ22;
 				INFOPLIST_FILE = phuza/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = us.phuza.ap;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.phuza.phuzamvp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
