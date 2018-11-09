@@ -101,6 +101,24 @@ class MenuItemCell: UITableViewCell {
 class LogoutButton: UIButton {
     override func layoutSubviews() {
         super.layoutSubviews()
-        roundCorners([.topLeft, .topRight], radius: 4.0)
+        
+        var iphoneX = false
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+            case 2436:
+                iphoneX = true
+            case 2688:
+                iphoneX = true
+            case 1792:
+                iphoneX = true
+            default:
+                print("unknown")
+            }
+        }
+        if iphoneX {
+            roundCorners(.allCorners, radius: 4.0)
+        } else {
+            roundCorners([.topLeft, .topRight], radius: 4.0)
+        }
     }
 }
